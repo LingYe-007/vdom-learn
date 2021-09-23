@@ -7,7 +7,7 @@
 ```
 npm i
 npm run build
-npm run start
+npm run dev
 ```
 
 在页面上修改dom文字内容,若dom元素销毁,dom文字内容重置,若未文字未被重置,说明dom元素保留
