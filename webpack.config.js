@@ -2,13 +2,19 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: {
+    feelH: "./src/feelH.js",
+    h: "./src/h.js",
+    feelDiff: "./src/feelDiff.js",
+    diff: "./src/diff.js",
+  },
   output: {
-    publicPath:'/xuni',
-    filename: "bundle.js",
+    path: __dirname,
+    // publicPath:'/xuni',
+    filename: "./dist/[name].js",
   },
   devServer: {
-    static:"www",
+    static: "pages",
     port: 8080,
     hot: true,
     open: true,

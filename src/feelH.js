@@ -34,5 +34,6 @@ const myVnode3 = h("ul",[
 
 // 让虚拟节点上书
 const container = document.getElementById("container");
+console.log(container)
 patch(container, myVnode);
 patch(container,myVnode3)
